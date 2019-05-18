@@ -4,6 +4,16 @@ The default target ```my-default-targets``` shows a hello-message.
 
 When a line in the makefile target is prefixed with ```@``` the command itself will not be echoed.
 
+Long command can be wrapped with ``` \ ```. That mean a command 
+```
+my-default-targets: hello goodbye
+```
+Can be also written as
+```
+my-default-targets: hello \
+                    goodbye
+```
+
 ## Simple print a text
 Content of the Makefile
 ```
