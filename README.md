@@ -14,7 +14,7 @@ The command ```make``` calls targets from a [Makefile](https://en.wikipedia.org/
 
 ### Links
 * [MakeFile Tutorial](http://makefiletutorial.com/)
-* [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/
+* [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/)
 
 ### Tools
 * [JQ - JSON Query](https://stedolan.github.io/jq/)
