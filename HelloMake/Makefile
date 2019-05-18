@@ -1,5 +1,5 @@
 my-default-targets: hello \
-				    goodbye
+                    goodbye
 
 hello-with-echo: 
 	echo "Hello, to the world of make (should be seen twice)"

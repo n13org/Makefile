@@ -1,6 +1,6 @@
 # Hello Makefile
 
-## TOC
+## Table of Content
 [Simple print a text](#simple-print-a-text)  
 [Combine two targets in the default target](#combine-two-targets-in-the-default-target)  
 
@@ -55,7 +55,7 @@ echo "Hello, to the world of make (should be seen twice)
 Content of the Makefile
 ```
 my-default-targets: hello \
-				    goodbye
+                    goodbye
 
 hello-with-echo: 
 	echo "Hello, to the world of make (should be seen twice)"
