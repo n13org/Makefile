@@ -23,3 +23,6 @@ The command ```make``` calls targets from a [Makefile](https://en.wikipedia.org/
 
 ### Additional for Windows Systems without Linux subsystem
 * [Gnu CoreUtils for Win32](http://gnuwin32.sourceforge.net/packages/coreutils.htm)  
+* [Make for Windows](http://gnuwin32.sourceforge.net/packages/make.htm) 
+1. Download and install Binaries
+2. Add Path to the Gnu-Binaries to PATH (e.g. C:\Program Files (x86)\GnuWin32\bin)
