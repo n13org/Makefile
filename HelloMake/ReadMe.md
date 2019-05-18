@@ -4,7 +4,7 @@
 [Simple print a text](#simple-print-a-text)  
 [Combine two targets in the default target](#combine-two-targets-in-the-default-target)  
 
-## Description
+## Makefile tips and tricks - description
 The default target ```my-default-targets``` shows a hello-message.
 
 When a line in the makefile target is prefixed with ```@``` the command itself will not be echoed.
