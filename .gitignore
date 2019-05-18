@@ -29,6 +29,9 @@ artifacts/
 # Certificates and private keys
 *.pfx
 
+# Binaries
+*.exe
+
 # NuGet Packages
 *.nupkg
 # The packages folder can be ignored because of Package Restore
