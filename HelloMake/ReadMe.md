@@ -5,7 +5,8 @@ The default target ```my-default-targets``` shows a hello-message.
 When a line in the makefile target is prefixed with ```@``` the command itself will not be echoed.
 
 ## Simple print a text
-```Makefile
+Content of the Makefile
+```
 my-default-targets: hello
 
 hello-with-echo: 
@@ -15,10 +16,19 @@ hello:
 	@echo "Hello, to the world of make (should be seen once)"
 ```
 
+Use default target
+```bash
+$ make
+Hello, to the world of make (should be seen once)
+```
+
+Use target hello with @-prefix
 ```bash
 $ make hello
 Hello, to the world of make (should be seen once)
 ```
+
+Use target hello without @-prefix
 
 ```bash
 $ make hello-with-echo
