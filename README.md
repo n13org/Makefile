@@ -13,8 +13,8 @@ The command ```make``` calls targets from a [Makefile](https://en.wikipedia.org/
 ## Summary - Recap
 
 ### Links
-[MakeFile Tutorial](http://makefiletutorial.com/)
-[Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/
+* [MakeFile Tutorial](http://makefiletutorial.com/)
+* [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/
 
 ### Tools
 * [JQ - JSON Query](https://stedolan.github.io/jq/)
