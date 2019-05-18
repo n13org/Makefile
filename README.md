@@ -3,14 +3,23 @@ Makefile How-Tos and Tutorials. Simple examples and even some detailed workflows
 
 The project is maintained by [n13.org](https://n13.org) - Open Source by [KargWare](http://kargware.com).
 
-## Introduction
 The command ```make``` calls targets from a [Makefile](https://en.wikipedia.org/wiki/Make_(software)). The Makefile should be placed on root-level, or can be refered by the parameter ```make -f```. The first target in the Makefile is the default target and will be executed, when make is called without target.
+
+## Sections
+|Topic|Description|
+|-----|-----------|
+|[Hello Make](./HelloMake)|Examples to use make with a Makefile|
+
+## Summary - Recap
 
 ### Links
 [MakeFile Tutorial](http://makefiletutorial.com/)
+[Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/
 
 ### Tools
 * [JQ - JSON Query](https://stedolan.github.io/jq/)
+* [Node.js](https://nodejs.org/en/)
+* [NPM](https://www.npmjs.com/)
 
 ### Additional for Windows Systems without Linux subsystem
 * [Gnu CoreUtils for Win32](http://gnuwin32.sourceforge.net/packages/coreutils.htm)  
