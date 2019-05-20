@@ -18,6 +18,13 @@ hello-variable:
 	@echo "* Variable as shell script  : $(PWD)"
 	@echo "\ ######################### #"
 	
+hello-variable-direct: 
+	@echo "/ ######################### #"
+	@echo "* Variable as text          : Content of variable"
+	@echo "* Variable as shell command : $(shell date +%Y%m%d-%H:%M:%S)"
+	@echo "* Variable as shell script  : $(shell ../_scripts/bash/get-pwd.sh)"
+	@echo "\ ######################### #"
+	
 .PHONY: goodbye
 goodbye: 
 	@echo "Bye bye, see you next time!"
