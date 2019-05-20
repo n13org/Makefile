@@ -108,6 +108,7 @@ goodbye:
 
 Use 'make hello-variable'
 ```bash
+$ make hello-variable
 / ######################### #
 * Variable as text          : Content of variable
 * Variable as shell command : 20190520-06:40:19
