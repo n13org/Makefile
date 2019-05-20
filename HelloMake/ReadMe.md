@@ -4,6 +4,7 @@
 [Simple print a text](#simple-print-a-text)  
 [Combine two targets in the default target](#combine-two-targets-in-the-default-target)  
 [Use of variables](#use-of-variables)  
+[User a variable for the target only](#user-a-variable-for-the-target-only)  
 
 ## Makefile tips and tricks - description
 The default target ```my-default-targets``` shows a hello-message.
@@ -116,7 +117,7 @@ $ make hello-variable
 \ ######################### #
 ```
 
-## User a variable for the target only
+## Use a variable for the target only
 Use a variable just for a target. The target has to be mentioned twice in the Makefile. The first time we define the target variable, the second time we will use the target variable.
 
 Content of the Makefile
@@ -135,3 +136,39 @@ $ make hello-variable-target-only
 * Variable from target : Content of target variable
 \ #################### #
 ```
+
+## Use a variable from environment
+Make can access even environment variable, here in the example we use the ```%JAVA_HOME%``` from Windows.
+
+Content of the Makefile
+```
+hello-env-variable:
+	@echo "/ ######################### #"
+	@echo "* Variable from environment : $(JAVA_HOME)"
+	@echo "\ ######################### #"
+```
+
+Use 'make hello-env-variable'
+```bash
+$ make hello-env-variable
+/ ######################### #
+* Variable from environment : C:\Program Files\Java\jdk1.8.0_202
+\ ######################### #
+```
+
+Use 'make hello-env-variable' with -e, to overwrite the env-variabe
+```bash
+$ make hello-env-variable -e JAVA_HOME=foo
+/ ######################### #
+* Variable from environment : foo
+\ ######################### #
+```
+
+Use 'make hello-env-variable' without -e, to overwrite the env-variabe. Sometimes I got here a warning.
+```bash
+$ make hello-env-variable JAVA_HOME=foo
+/ ######################### #
+* Variable from environment : foo
+\ ######################### #
+```
+

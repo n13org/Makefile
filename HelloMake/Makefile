@@ -31,6 +31,11 @@ hello-variable-target-only:
 	@echo "* Variable from target : $(MYTARGETVAR)"
 	@echo "\ #################### #"
 	
+hello-env-variable:
+	@echo "/ ######################### #"
+	@echo "* Variable from environment : $(JAVA_HOME)"
+	@echo "\ ######################### #"
+	
 .PHONY: goodbye
 goodbye: 
 	@echo "Bye bye, see you next time!"
