@@ -115,3 +115,23 @@ $ make hello-variable
 * Variable as shell script  : /d/n13.org/Makefile/HelloMake
 \ ######################### #
 ```
+
+## User a variable for the target only
+Use a variable just for a target. The target has to be mentioned twice in the Makefile. The first time we define the target variable, the second time we will use the target variable.
+
+Content of the Makefile
+```
+hello-variable-target-only: MYTARGETVAR="Content of target variable"
+hello-variable-target-only:
+	@echo "/ #################### #"
+	@echo "* Variable from target : $(MYTARGETVAR)"
+	@echo "\ #################### #"
+```
+
+Use 'make hello-variable-target-only'
+```bash
+$ make hello-variable-target-only
+/ #################### #
+* Variable from target : Content of target variable
+\ #################### #
+```

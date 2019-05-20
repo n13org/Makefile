@@ -25,7 +25,12 @@ hello-variable-direct:
 	@echo "* Variable as shell script  : $(shell ../_scripts/bash/get-pwd.sh)"
 	@echo "\ ######################### #"
 	
+hello-variable-target-only: MYTARGETVAR="Content of target variable"
+hello-variable-target-only:
+	@echo "/ #################### #"
+	@echo "* Variable from target : $(MYTARGETVAR)"
+	@echo "\ #################### #"
+	
 .PHONY: goodbye
 goodbye: 
 	@echo "Bye bye, see you next time!"
-	
