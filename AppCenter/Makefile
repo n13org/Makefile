@@ -8,4 +8,4 @@ appcenter-versions:
 	@echo "\ ########### #"
 
 appcenter-install:
-	npm install -g appcenter-cli	
+	npm install --global appcenter-cli	
